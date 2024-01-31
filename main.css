@@ -1,0 +1,173 @@
+/*
+
+h1 {
+    color: rgb(227, 102, 223);
+}
+
+h1:hover {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+h2 {
+    color: green;
+}
+
+ Usando ID da section para mudar o h2 de uma seção específica.
+
+#economia h2 {
+    color: gold;
+}
+
+ Usando classe para mudar o campo de data que aparece em todas as seções
+
+.creation-date {
+    color: #ccc;
+}
+
+ Seletor que muda tudo que não teve uma estilização própria
+ Resetar a margem e padding padrão do navegador
+
+* {
+    color: red;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: rgb(220, 220, 220);
+    padding: 16px 0;
+    color: rgb(88, 88, 88);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a{
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+}
+
+header li a:hover {
+    color: rgb(50, 50, 50);
+    text-decoration: underline;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img{
+    /* height: 180px; */
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a{
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#esportes {
+    background-color: rgb(255, 248, 233);
+}
+
+#esportes .articles article a {
+    background-color: rgb(240, 158, 76);
+    color: rgb(255, 248, 233)
+}
+
+#economia {
+    background-color: rgb(235, 255, 222);
+}
+
+#economia .articles article a {
+    background-color: rgb(131, 206, 80);
+    color: rgb(235, 255, 222);
+}
+
+#tecnologia {
+    background-color: rgb(255, 227, 249);
+}
+
+#tecnologia .articles article a {
+    background-color: rgb(234, 146, 215);
+    color: rgb(255, 227, 249);
+}
+
+#entretenimento {
+    background-color: rgb(209, 224, 255);
+}
+
+#entretenimento .articles article a {
+    background-color: rgb(147, 183, 255);
+    color: rgb(209, 224, 255);
+}
